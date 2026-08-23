@@ -1,4 +1,64 @@
-.SearchBox{
-    text-align: center;
-    margin-bottom: 2rem;
+.searchBox {
+  margin-bottom: 26px;
+}
+
+.searchBox form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+}
+
+.searchBox .MuiTextField-root {
+  flex: 1;
+}
+
+.searchBox .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: var(--text-hi);
+}
+
+.searchBox .MuiOutlinedInput-root fieldset {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.searchBox .MuiOutlinedInput-root:hover fieldset {
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+.searchBox .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: var(--accent-sun);
+}
+
+.searchBox .MuiInputLabel-root {
+  color: var(--text-lo);
+}
+
+.searchBox .MuiInputLabel-root.Mui-focused {
+  color: var(--accent-sun);
+}
+
+.searchBox input {
+  color: var(--text-hi);
+}
+
+.searchBox .MuiButton-root {
+  background: var(--accent-sun);
+  color: #1a1206;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 600;
+  text-transform: none;
+  box-shadow: 0 8px 20px rgba(255, 176, 32, 0.35);
+}
+
+.searchBox .MuiButton-root:hover {
+  background: #ffc457;
+}
+
+.searchBox p {
+  margin-top: 12px;
+  font-size: 13px;
+  color: #ff8b8b;
 }

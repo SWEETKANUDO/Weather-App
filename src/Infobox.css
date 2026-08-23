@@ -1,9 +1,97 @@
-.InfoBox{
-    text-align: center;
+.infoBox {
+  text-align: center;
 }
 
-.cardContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.weatherCard {
+  position: relative;
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cityName {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-hi);
+}
+
+.condition {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--text-lo);
+  text-transform: capitalize;
+}
+
+.condition svg {
+  font-size: 18px;
+  color: var(--accent-sun);
+}
+
+.weatherCard[data-mood="rainy"] .condition svg { color: var(--accent-rain); }
+.weatherCard[data-mood="cold"] .condition svg { color: var(--accent-frost); }
+.weatherCard[data-mood="cloudy"] .condition svg { color: #b7c2d6; }
+
+.tempHero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2px;
+  margin: 12px 0 4px;
+}
+
+.tempValue {
+  font-family: var(--font-mono);
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--text-hi);
+  letter-spacing: -2px;
+}
+
+.tempUnit {
+  font-family: var(--font-mono);
+  font-size: 24px;
+  color: var(--text-lo);
+  margin-top: 8px;
+}
+
+.feelsLike {
+  font-size: 13px;
+  color: var(--text-lo);
+  margin-bottom: 22px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 18px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-lo);
+}
+
+.statValue {
+  font-family: var(--font-mono);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-hi);
 }
