@@ -1,4 +1,4 @@
-import './infoBox.css';
+import './InfoBox.css';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 import SunnyIcon from '@mui/icons-material/Sunny';
