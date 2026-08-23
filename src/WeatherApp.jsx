@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SearchBox from './SearchBox';
-import InfoBox from './infoBox';
+import InfoBox from './InfoBox';
 
 function getMood(info) {
     const w = (info.weather || "").toLowerCase();
